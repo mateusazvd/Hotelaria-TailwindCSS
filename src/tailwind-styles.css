@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .header{
+        @apply container max-w-5xl  mx-auto px-4 h-20 flex items-center justify-between
+    }
+    .logo{
+        @apply font-bold text-xl text-green-700
+    }
+    .header a{
+        @apply mx-2 text-base text-gray-600 hover:text-gray-900
+
+    }
+    .banner-conteudo{
+        @apply  w-auto flex items-center justify-center h-full
+    }
+    .banner-conteudo h1{
+        @apply text-white text-5xl font-bold text-center my-2
+    }
+    .banner-conteudo p{
+        @apply text-green-100 text-lg w-auto text-center
+    }
+
+    .select{
+        @apply bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500 mx-2 
+    }
+    .btn-banner{
+        @apply text-yellow-900 bg-yellow-400 px-3 py-2 rounded flex items-center
+        hover:bg-yellow-600 transition
+    }
+    .img-destaque{
+        @apply w-auto px-5
+    }
+
+}
+
+.img-opacity{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.img-opacity:hover{
+    opacity: 0.9;
+}
+.img-destaque{
+    width: 450px;
+}
+.img-banner{
+    background-image: url('../public/banner.png');
+    background-color: black;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
